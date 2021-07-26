@@ -1,0 +1,405 @@
+.page {
+    background: url('/img/home-bg.jpg');
+}
+
+.page.summer {
+    background: url('/img/bg-summer.jpg') no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.page.winter {
+    background: url('/img/bg-winter.jpg') no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.page.spring {
+    background: url('/img/bg-spring.jpg') no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.page.autumn {
+    background: url('/img/bg-autumn.jpg') no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1400px;
+}
+
+
+/* HEADER */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .title .title-link {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    text-shadow: 0px 0px 6px black;
+    box-shadow: 1px 1px 6px 3px black, -1px -1px 8px 4px black;
+    color: hsl(0, 0%, 100%);
+    background: hsl(60, 100%, 7%);
+    text-shadow: 0 0 4px 4px hsla(65, 100%, 30%, 0.4), 6px 6px 4px 7px hsl(65, 60%, 95%), -4px -6px 4px 6px hsl(65, 60%, 95%), 0 0 1px 9px hsl(60, 1%, 37%);
+}
+
+
+/* NAVIGATION */
+
+.navigation .season-list {
+    display: flex;
+    list-style: none;
+}
+
+.navigation .season {
+    margin-left: 5px;
+}
+
+.navigation .season-link {
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    padding: 15px 20px;
+    transition: 0.15s;
+    letter-spacing: 1px;
+}
+
+
+/* HOME NAVIGATION SPRING STYLE */
+
+.home-navigation .season .spring {
+    border: 2px solid #9D7995;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.home-navigation .season .spring:hover {
+    background-color: #FDC2C2;
+    color: white;
+    text-shadow: 1px 1px 3px black, -1px -1px 3px black;
+    box-shadow: 0px 0px 4px 2px #311E4B;
+    font-size: 22px;
+}
+
+
+/* HOME NAVIGATION SUMMER STYLE */
+
+.home-navigation .season .summer {
+    border: 2px solid #185717;
+    background-color: white;
+    color: black;
+}
+
+.home-navigation .season .summer:hover {
+    background-color: rgb(5, 133, 5);
+    color: white;
+    text-shadow: 1px 1px 3px black, -1px -1px 3px black;
+    box-shadow: 0px 0px 4px 2px #003543;
+    font-size: 22px;
+}
+
+
+/* HOME NAVIGATION AUTUMN STYLE */
+
+.home-navigation .season .autumn {
+    border: 2px solid black;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.home-navigation .season .autumn:hover {
+    font-size: 22px;
+    background-color: #744950;
+    color: white;
+    text-shadow: 1px 1px 3px black, -1px -1px 3px black;
+    box-shadow: 0px 0px 4px 2px #828dd4;
+}
+
+
+/* HOME NAVIGATION WINTER STYLE */
+
+.home-navigation .season .winter {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid black;
+}
+
+.home-navigation .season .winter:hover {
+    font-size: 22px;
+    background-color: #666374;
+    color: white;
+    text-shadow: 1px 1px 3px black, -1px -1px 3px black;
+    box-shadow: 0px 0px 4px 2px whitesmoke;
+}
+
+
+/* SPRING NAVIGATION STYLES */
+
+.navigation .season-list.spring .season .season-link {
+    border: 2px solid #9D7995;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.navigation .season-list.spring .season .spring {
+    background-color: #FDC2C2;
+    color: white;
+    text-shadow: 1px 1px 3px black, -1px -1px 3px black;
+    font-size: 22px;
+}
+
+.navigation .season-list.spring .season .season-link:hover {
+    background-color: #FDC2C2;
+    color: white;
+    text-shadow: 1px 1px 3px black, -1px -1px 3px black;
+    box-shadow: 0px 0px 4px 2px #311E4B;
+    font-size: 22px;
+}
+
+
+/* SUMMER NAVIGATION STYLES */
+
+.navigation .season-list.summer .season .season-link {
+    border: 2px solid #185717;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.navigation .season-list.summer .season .summer {
+    background-color: rgb(5, 133, 5);
+    color: white;
+    text-shadow: 1px 1px 3px black, -1px -1px 3px black;
+    font-size: 22px;
+}
+
+.navigation .season-list.summer .season .season-link:hover {
+    background-color: rgb(5, 133, 5);
+    color: white;
+    text-shadow: 1px 1px 3px black, -1px -1px 3px black;
+    box-shadow: 0px 0px 6px 3px #13a30b;
+    font-size: 22px;
+}
+
+
+/* AUTUMN NAVIGATION STYLES */
+
+.navigation .season-list.autumn .season .season-link {
+    border: 2px solid black;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.navigation .season-list.autumn .season .autumn {
+    font-size: 22px;
+    background-color: #744950;
+    color: white;
+    text-shadow: 1px 1px 3px black, -1px -1px 3px black;
+}
+
+.navigation .season-list.autumn .season .season-link:hover {
+    font-size: 22px;
+    background-color: #744950;
+    color: white;
+    text-shadow: 1px 1px 3px black, -1px -1px 3px black;
+    box-shadow: 0px 0px 4px 2px #828dd4;
+}
+
+
+/* WINTER NAVIGATION STYLES */
+
+.navigation .season-list.winter .season .season-link {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid black;
+}
+
+.navigation .season-list.winter .season .winter {
+    font-size: 22px;
+    background-color: #666374;
+    color: white;
+    text-shadow: 1px 1px 3px black, -1px -1px 3px black;
+}
+
+.navigation .season-list.winter .season .season-link:hover {
+    font-size: 22px;
+    background-color: #666374;
+    color: white;
+    text-shadow: 1px 1px 3px black, -1px -1px 3px black;
+    box-shadow: 0px 0px 4px 2px whitesmoke;
+}
+
+
+/* PAGE */
+
+main {
+    margin-top: 150px;
+}
+
+main .add-block {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 20px;
+}
+
+main .add-block .input {
+    font-size: 22px;
+}
+
+
+/* ADD BUTTON */
+
+main .add-block .add {
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 12px 22px;
+    cursor: pointer;
+    transition: all 0.2s, transform 0.01s;
+}
+
+main .add-block .add:active {
+    transform: scale(0.95);
+}
+
+
+/* ADD BUTTON SPRING */
+
+main .add-block .add.spring {
+    border: 2px solid #9D7995;
+}
+
+main .add-block .add.spring:hover {
+    background-color: #FDC2C2;
+    color: white;
+    text-shadow: 1px 1px 3px black, -1px -1px 3px black;
+    box-shadow: 0px 0px 4px 2px #311E4B;
+}
+
+
+/* ADD BUTTON SUMMER */
+
+main .add-block .add.summer {
+    border: 2px solid #185717;
+}
+
+main .add-block .add.summer:hover {
+    background-color: rgba(5, 133, 5, 1);
+    color: white;
+    text-shadow: 1px 1px 3px black, -1px -1px 3px black;
+    box-shadow: 0px 0px 4px 2px #13a30b;
+}
+
+
+/* ADD BUTTON AUTUMN */
+
+main .add-block .add.autumn {
+    border: 2px solid black;
+}
+
+main .add-block .add.autumn:hover {
+    background-color: #744950;
+    color: white;
+    text-shadow: 1px 1px 3px black, -1px -1px 3px black;
+    box-shadow: 0px 0px 4px 2px #828dd4;
+}
+
+
+/* ADD BUTTON WINTER */
+
+main .add-block .add.winter {
+    border: 2px solid black;
+}
+
+main .add-block .add.winter:hover {
+    background-color: #666374;
+    color: white;
+    text-shadow: 1px 1px 3px black, -1px -1px 3px black;
+    box-shadow: 0px 0px 4px 2px whitesmoke;
+}
+
+
+/* MISTAKE ALERT*/
+
+main .add-block .mistake {
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+    width: 255px;
+    padding: 10px;
+    border: 1px solid red;
+    background-color: crimson;
+    color: white;
+    border-radius: 10px;
+}
+
+main .add-block .mistake .wrong {
+    border: 1px solid white;
+    border-radius: 50%;
+    font-size: 14px;
+    padding: 3px 6px;
+}
+
+
+/* TODO LIST*/
+
+main .todo-list {
+    display: inline-block;
+}
+
+main .todo-list .list {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 650px;
+}
+
+main .list li {
+    position: relative;
+    font-size: 18px;
+    min-width: 150px;
+    text-align: center;
+    padding: 10px 50px;
+    margin: 5px 10px;
+    border: 2px solid seagreen;
+    border-radius: 18px;
+    transition: background-color 0.20s, transform 0.3s;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+main .list li:hover {
+    background-color: rgb(82, 187, 169);
+    border-color: lightseagreen;
+    color: white;
+}
+
+main .list li.checked {
+    transform: scale(1.05);
+    background-color: lightseagreen;
+    border-color: rgb(82, 187, 169);
+    color: white;
+    text-decoration: line-through black 2px;
+}
+
+main .list li .close {
+    position: absolute;
+    font-size: 14px;
+    right: 5px;
+    top: 5px;
+    border: 2px solid orangered;
+    border-radius: 50%;
+    padding: 4px 8px;
+    transition: all 0.1s;
+    cursor: pointer;
+}
+
+main .list li .close:hover {
+    background-color: red;
+}
+
+.hidden {
+    display: none;
+}
