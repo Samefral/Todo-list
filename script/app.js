@@ -26,6 +26,8 @@ list.addEventListener('click', function(evt) {
 button.onclick = function() {
 
     let li = document.createElement('li');
+    li.draggable = true;
+    li.classList.add('list-item')
     let inputValue = input.value;
     let txt = document.createTextNode(inputValue);
     li.appendChild(txt);
@@ -54,4 +56,34 @@ input.addEventListener('keydown', function(evt) {
     if (evt.keyCode === 13) {
         button.click();
     }
+})
+
+
+list.addEventListener('dragstart', function(evt) {
+    evt.target.classList.add('selected');
+    list.classList.remove('hover');
+    setTimeout(function() {
+        evt.target.style.opacity = '0';
+    }, 1);
+})
+
+list.addEventListener('dragend', function(evt) {
+    evt.target.classList.remove('selected');
+    evt.target.style.opacity = '1';
+    setTimeout(function() {
+        list.classList.add('hover');
+    }, 50);
+    listChange();
+})
+
+list.addEventListener('dragover', function(evt) {
+    evt.preventDefault();
+    let activeElement = list.querySelector('.selected');
+    let currentElement = evt.target;
+    let isMoveable = activeElement !== currentElement && currentElement.classList.contains('list-item');
+    if (!isMoveable) {
+        return;
+    }
+    let nextElement = (currentElement === activeElement.nextElementSibling) ? currentElement.nextElementSibling : currentElement;
+    list.insertBefore(activeElement, nextElement);
 })
