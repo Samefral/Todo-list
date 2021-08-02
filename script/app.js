@@ -58,6 +58,9 @@ input.addEventListener('keydown', function(evt) {
     }
 })
 
+input.addEventListener('focus', function() {
+    mistake.style.display = 'none';
+})
 
 list.addEventListener('dragstart', function(evt) {
     evt.target.classList.add('selected');
