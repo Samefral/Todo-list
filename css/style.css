@@ -403,3 +403,88 @@ main .list li .close:hover {
 .hidden {
     display: none;
 }
+
+@media (max-width: 1441px) {
+    .container {
+        max-width: 1181px;
+    }
+    .page.spring,
+    .page.summer,
+    .page.autumn,
+    .page.winter {
+        background-size: 100% 100%;
+    }
+}
+
+@media (max-width: 1220px) {
+    .container {
+        max-width: 960px;
+    }
+    .page.spring,
+    .page.summer,
+    .page.autumn,
+    .page.winter {
+        background-size: 110% 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 764px;
+    }
+    .page.spring,
+    .page.summer,
+    .page.autumn,
+    .page.winter {
+        background-size: 120% 100%;
+    }
+    main .todo-list .list {
+        flex-wrap: nowrap;
+    }
+}
+
+@media (max-width: 784px) {
+    .container {
+        max-width: 400px;
+        text-align: center;
+    }
+    main {
+        margin-top: 100px;
+    }
+    .input {
+        width: 200px;
+    }
+    main .add-block .mistake {
+        width: 190px;
+    }
+    .list {
+        padding: 0;
+    }
+}
+
+@media (max-width: 681px) {
+    .container {
+        max-width: 350px;
+    }
+    .page.spring,
+    .page.summer,
+    .page.autumn,
+    .page.winter {
+        background-size: 140% 100%;
+    }
+    main {
+        margin-top: 0;
+    }
+    .navigation .season-list {
+        height: 130px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .navigation .season-list.spring .season .spring,
+    .navigation .season-list.summer .season .summer,
+    .navigation .season-list.autumn .season .autumn,
+    .navigation .season-list.winter .season .winter {
+        font-size: 18px;
+    }
+}
