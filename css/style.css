@@ -244,6 +244,7 @@ main .add-block {
 }
 
 main .add-block .input {
+    width: 250px;
     font-size: 22px;
 }
 
@@ -326,7 +327,7 @@ main .add-block .mistake {
     display: none;
     align-items: center;
     justify-content: space-around;
-    width: 255px;
+    width: 235px;
     padding: 10px;
     border: 1px solid red;
     background-color: crimson;
@@ -389,15 +390,38 @@ main .list li .close {
     font-size: 14px;
     right: 5px;
     top: 5px;
-    border: 2px solid orangered;
+    width: 30px;
+    height: 30px;
+    border: 2px solid rgb(228, 0, 0);
     border-radius: 50%;
-    padding: 4px 8px;
-    transition: all 0.1s;
+    transition: all 0.2s;
     cursor: pointer;
 }
 
 main .list li .close:hover {
+    color: rgb(255, 255, 255);
     background-color: red;
+}
+
+main .list li.copied::before {
+    content: '\2713';
+    font-size: 24px;
+    position: absolute;
+    animation-name: copied;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-duration: 0.3s;
+    left: 15px;
+    top: 0px;
+}
+
+@keyframes copied {
+    50% {
+        transform: rotate(7deg) translateY(15px);
+    }
+    100% {
+        transform: rotate(-7deg) translateY(5px);
+    }
 }
 
 .hidden {

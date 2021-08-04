@@ -14,7 +14,7 @@ require('header.php');
         </div>
     </div>
 
-    <div class="todo-list ">
+    <div class="todo-list">
         <ul class="list hover">
         </ul>
     </div>

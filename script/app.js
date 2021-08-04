@@ -16,7 +16,13 @@ list.addEventListener('click', function(evt) {
     if (evt.target.tagName === "LI") {
         evt.target.classList.toggle('checked');
         listChange();
-    } else if (evt.target.tagName === "SPAN") {
+    }
+    if (evt.target.tagName === "SPAN") {
+        let listItem = evt.target.parentNode;
+        listItem.classList.toggle('checked');
+        listChange();
+    }
+    if (evt.target.tagName === "BUTTON") {
         let listItem = evt.target.parentNode;
         listItem.remove();
         listChange();
@@ -27,9 +33,11 @@ button.onclick = function() {
 
     let li = document.createElement('li');
     li.draggable = true;
-    li.classList.add('list-item')
+    li.classList.add('list-item');
     let inputValue = input.value;
-    let txt = document.createTextNode(inputValue);
+    let txt = document.createElement('span');
+    txt.className = 'item-text';
+    txt.appendChild(document.createTextNode(inputValue));
     li.appendChild(txt);
 
     if (inputValue === "") {
@@ -37,12 +45,28 @@ button.onclick = function() {
     } else {
         mistake.style.display = "none";
         list.appendChild(li);
-        let deleteButton = document.createElement('span');
+        let deleteButton = document.createElement('button');
         deleteButton.textContent = "X";
         deleteButton.className = "close";
         li.appendChild(deleteButton);
 
     }
+
+    li.addEventListener('mousedown', function(evt) {
+        if (evt.button === 1) {
+            li.classList.add('copied');
+            setTimeout(function() {
+                li.classList.remove('copied');
+            }, 900);
+            let str = txt.textContent;
+            let el = document.createElement('textarea');
+            el.value = str;
+            document.body.appendChild(el);
+            el.select();
+            document.execCommand('copy');
+            document.body.removeChild(el);
+        }
+    })
 
     input.value = '';
     listChange();
@@ -90,3 +114,23 @@ list.addEventListener('dragover', function(evt) {
     let nextElement = (currentElement === activeElement.nextElementSibling) ? currentElement.nextElementSibling : currentElement;
     list.insertBefore(activeElement, nextElement);
 })
+
+let items = list.querySelectorAll('.list-item');
+for (let item of items) {
+    let text = item.querySelector('.item-text');
+    item.addEventListener('mousedown', function(evt) {
+        if (evt.button === 1) {
+            item.classList.add('copied');
+            setTimeout(function() {
+                item.classList.remove('copied');
+            }, 900)
+            let str = text.textContent;
+            let el = document.createElement('textarea');
+            el.value = str;
+            document.body.appendChild(el);
+            el.select();
+            document.execCommand('copy');
+            document.body.removeChild(el);
+        }
+    })
+}
