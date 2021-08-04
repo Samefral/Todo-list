@@ -30,7 +30,6 @@ list.addEventListener("click", function (evt) {
 });
 
 button.onclick = function () {
-
   let li = document.createElement("li");
   li.draggable = true;
   li.classList.add("list-item");
@@ -69,7 +68,6 @@ button.onclick = function () {
 
   input.value = "";
   listChange();
-  
 };
 
 if (localStorage.getItem(season)) {
@@ -107,11 +105,16 @@ list.addEventListener("dragover", function (evt) {
   evt.preventDefault();
   let activeElement = list.querySelector(".selected");
   let currentElement = evt.target;
-  let isMoveable = activeElement !== currentElement && currentElement.classList.contains("list-item");
+  let isMoveable =
+    activeElement !== currentElement &&
+    currentElement.classList.contains("list-item");
   if (!isMoveable) {
     return;
   }
-  let nextElement = currentElement === activeElement.nextElementSibling ? currentElement.nextElementSibling : currentElement;
+  let nextElement =
+    currentElement === activeElement.nextElementSibling
+      ? currentElement.nextElementSibling
+      : currentElement;
   list.insertBefore(activeElement, nextElement);
 });
 
@@ -133,4 +136,7 @@ for (let item of items) {
       document.body.removeChild(el);
     }
   });
+  if (item.classList.contains("copied")) {
+    item.classList.remove("copied");
+  }
 }
