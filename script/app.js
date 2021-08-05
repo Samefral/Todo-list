@@ -80,6 +80,12 @@ input.addEventListener("keydown", function (evt) {
   }
 });
 
+input.oninput = function() {
+  if (input.value.charAt(0) === " ") {
+    input.value = "";
+  }
+};
+
 input.addEventListener("focus", function () {
   mistake.style.display = "none";
 });
