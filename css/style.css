@@ -1,5 +1,6 @@
 .page {
-  background: url("/img/home-bg.jpg");
+  background: url("/img/home-bg.jpg") no-repeat;
+  background-attachment: fixed;
 }
 
 .page.summer {
@@ -73,11 +74,13 @@
   letter-spacing: 1px;
 }
 
+/* HOME PAGE */
+
 /* HOME NAVIGATION SPRING STYLE */
 
 .home-navigation .season .spring {
   border: 2px solid #9d7995;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: #fff;
 }
 
 .home-navigation .season .spring:hover {
@@ -92,7 +95,7 @@
 
 .home-navigation .season .summer {
   border: 2px solid #185717;
-  background-color: white;
+  background-color: #fff;
   color: black;
 }
 
@@ -102,13 +105,14 @@
   text-shadow: 1px 1px 3px black, -1px -1px 3px black;
   box-shadow: 0px 0px 4px 2px #003543;
   font-size: 22px;
+  border-color: black;
 }
 
 /* HOME NAVIGATION AUTUMN STYLE */
 
 .home-navigation .season .autumn {
   border: 2px solid black;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #fff;
 }
 
 .home-navigation .season .autumn:hover {
@@ -122,7 +126,7 @@
 /* HOME NAVIGATION WINTER STYLE */
 
 .home-navigation .season .winter {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #fff;
   border: 2px solid black;
 }
 
@@ -133,6 +137,127 @@
   text-shadow: 1px 1px 3px black, -1px -1px 3px black;
   box-shadow: 0px 0px 4px 2px whitesmoke;
 }
+
+/* HOME  TITLES*/
+
+.page .lists .title {
+  font-size: 26px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 0 10px;
+  color: #fff;
+  text-shadow: 1px 1px 3px black, -1px -1px 3px black;
+}
+
+/* HOME SPRING-TITLE STYLE*/
+
+.page .lists .spring-block .spring-title {
+  background-color: #fdc2c2;
+}
+
+/* HOME SUMMER-TITLE STYLE */
+
+.page .lists .summer-block .summer-title {
+  background-color: rgb(5, 133, 5);
+}
+
+/* HOME AUTUMN-TITLE STYLE */
+
+.page .lists .autumn-block .autumn-title {
+  background-color: #744950;
+}
+
+/* HOME WINTER-TITLE STYLE */
+
+.page .lists .winter-block .winter-title {
+  background-color: #666374;
+}
+
+/* HOME LISTS */
+
+.page .lists {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page .lists .list {
+  padding: 0;
+  list-style-type: none;
+}
+
+.page .lists .list li {
+  margin-top: 10px;
+}
+
+/* HOME SPRING-LIST STYLE */
+
+.page .lists .spring-block .spring-list li.checked {
+  color: #fff;
+  background-color: #fdc2c2;
+  border-color: #9d7995;
+  text-shadow: 1px 1px 3px black, -1px -1px 3px black;
+  text-decoration: line-through 1px black;
+}
+
+.page .lists .spring-block .spring-list li:hover {
+  color: #fff;
+  background-color: #ffb6b9;
+  border-color: #9d7995;
+  text-shadow: 1px 1px 3px black, -1px -1px 3px black;
+}
+
+/* HOME SUMMER-LIST STYLE */
+
+.page .lists .summer-block .summer-list li.checked {
+  color: #fff;
+  background-color: rgb(28, 165, 28);
+  border-color: black;
+  text-shadow: 1px 1px 3px black, -1px -1px 3px black;
+  text-decoration: line-through 1px black;
+}
+
+.page .lists .summer-block .summer-list li:hover {
+  color: #fff;
+  background-color: rgb(5, 133, 5);
+  border-color: black;
+  text-shadow: 1px 1px 3px black, -1px -1px 3px black;
+}
+
+/* HOME AUTUMN-LIST STYLE */
+
+.page .lists .autumn-block .autumn-list li.checked {
+  color: #fff;
+  background-color: #8d5a62;
+  border-color: black;
+  text-shadow: 1px 1px 3px black, -1px -1px 3px black;
+  text-decoration: line-through 1px black;
+}
+
+.page .lists .autumn-block .autumn-list li:hover {
+  color: #fff;
+  background-color: #744950;
+  border-color: black;
+  text-shadow: 1px 1px 3px black, -1px -1px 3px black;
+}
+
+/* HOME WINTER-LIST STYLE */
+
+.page .lists .winter-block .winter-list li.checked {
+  color: #fff;
+  background-color: #918e9e;
+  border-color: black;
+  text-shadow: 1px 1px 3px black, -1px -1px 3px black;
+  text-decoration: line-through 1px black;
+}
+
+.page .lists .winter-block .winter-list li:hover {
+  color: #fff;
+  background-color: #666374;
+  border-color: black;
+  text-shadow: 1px 1px 3px black, -1px -1px 3px black;
+}
+
+/* SEASONS PAGE */
 
 /* SPRING NAVIGATION STYLES */
 
@@ -168,6 +293,7 @@
   color: white;
   text-shadow: 1px 1px 3px black, -1px -1px 3px black;
   font-size: 22px;
+  border-color: black;
 }
 
 .navigation .season-list.summer .season .season-link:hover {
@@ -176,6 +302,7 @@
   text-shadow: 1px 1px 3px black, -1px -1px 3px black;
   box-shadow: 0px 0px 6px 3px #13a30b;
   font-size: 22px;
+  border-color: black;
 }
 
 /* AUTUMN NAVIGATION STYLES */
@@ -222,23 +349,6 @@
   box-shadow: 0px 0px 4px 2px whitesmoke;
 }
 
-/* PAGE */
-
-main {
-  margin-top: 150px;
-}
-
-main .add-block {
-  display: inline-block;
-  vertical-align: top;
-  margin-top: 20px;
-}
-
-main .add-block .input {
-  width: 250px;
-  font-size: 22px;
-}
-
 /* ADD BUTTON */
 
 main .add-block .add {
@@ -278,6 +388,7 @@ main .add-block .add.summer:hover {
   color: white;
   text-shadow: 1px 1px 3px black, -1px -1px 3px black;
   box-shadow: 0px 0px 4px 2px #13a30b;
+  border-color: black;
 }
 
 /* ADD BUTTON AUTUMN */
@@ -304,6 +415,23 @@ main .add-block .add.winter:hover {
   color: white;
   text-shadow: 1px 1px 3px black, -1px -1px 3px black;
   box-shadow: 0px 0px 4px 2px whitesmoke;
+}
+
+/* PAGE */
+
+main {
+  margin-top: 150px;
+}
+
+main .add-block {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 20px;
+}
+
+main .add-block .input {
+  width: 250px;
+  font-size: 22px;
 }
 
 /* MISTAKE ALERT*/
@@ -428,6 +556,9 @@ main .list li.copied::before {
   .container {
     max-width: 960px;
   }
+  .page .lists {
+    flex-direction: column;
+  }
   .page.spring,
   .page.summer,
   .page.autumn,
@@ -475,7 +606,7 @@ main .list li.copied::before {
     max-width: 350px;
   }
   .add {
-      margin-top: 5px;
+    margin-top: 5px;
   }
   .page.spring,
   .page.summer,
