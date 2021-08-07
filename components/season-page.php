@@ -6,7 +6,7 @@ require('header.php');
     <div class="add-block">
 
         <input type="text" name="textvalue" class="input" placeholder="Введите значение">
-        <button class="add <?= $season ?>" type="button">Добавить</button>
+        <button class="add-button <?= $season ?>" type="button">Добавить</button>
 
         <div class="mistake hidden">
             <span class="wrong">X</span>
@@ -21,5 +21,6 @@ require('header.php');
 
 
 </div>
+</main>
 <script src="/script/app.js"></script>
 </body>

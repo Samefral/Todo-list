@@ -13,12 +13,12 @@ $season = $_GET['season'];
     <title>List</title>
 </head>
 
-<body class="page <?= $season ?>">
+<body class="page <?= !$season ? 'home' : $season ?>">
     <div class="data-php" data-attr="<?= $season ?>"></div>
     <div class="container">
         <header class="header">
             <h1 class="title"><a href="/index.php" class="title-link">HOME</a></h1>
-            <nav class="navigation <?= !$season ? 'home-navigation' : '' ?>">
+            <nav class="navigation">
                 <ul class="season-list <?= $season ?>">
                     <li class="season"><a href="/components/season-page.php?season=spring" class="season-link spring">Весна</a></li>
                     <li class="season"><a href="/components/season-page.php?season=summer" class="season-link summer">Лето</a></li>

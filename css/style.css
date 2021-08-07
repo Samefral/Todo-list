@@ -78,12 +78,12 @@
 
 /* HOME NAVIGATION SPRING STYLE */
 
-.home-navigation .season .spring {
+.home .navigation .spring {
   border: 2px solid #9d7995;
   background-color: #fff;
 }
 
-.home-navigation .season .spring:hover {
+.home .navigation .spring:hover {
   background-color: #fdc2c2;
   color: white;
   text-shadow: 1px 1px 3px black, -1px -1px 3px black;
@@ -93,13 +93,13 @@
 
 /* HOME NAVIGATION SUMMER STYLE */
 
-.home-navigation .season .summer {
+.home .navigation .summer {
   border: 2px solid #185717;
   background-color: #fff;
   color: black;
 }
 
-.home-navigation .season .summer:hover {
+.home .navigation .summer:hover {
   background-color: rgb(5, 133, 5);
   color: white;
   text-shadow: 1px 1px 3px black, -1px -1px 3px black;
@@ -110,12 +110,12 @@
 
 /* HOME NAVIGATION AUTUMN STYLE */
 
-.home-navigation .season .autumn {
+.home .navigation .autumn {
   border: 2px solid black;
   background-color: #fff;
 }
 
-.home-navigation .season .autumn:hover {
+.home .navigation .autumn:hover {
   font-size: 22px;
   background-color: #744950;
   color: white;
@@ -125,12 +125,12 @@
 
 /* HOME NAVIGATION WINTER STYLE */
 
-.home-navigation .season .winter {
+.home .navigation .winter {
   background-color: #fff;
   border: 2px solid black;
 }
 
-.home-navigation .season .winter:hover {
+.home .navigation .winter:hover {
   font-size: 22px;
   background-color: #666374;
   color: white;
@@ -140,7 +140,7 @@
 
 /* HOME  TITLES*/
 
-.page .lists .title {
+.home .title {
   font-size: 26px;
   text-align: center;
   border-radius: 10px;
@@ -151,47 +151,47 @@
 
 /* HOME SPRING-TITLE STYLE*/
 
-.page .lists .spring-block .spring-title {
+.home .spring-title {
   background-color: #fdc2c2;
 }
 
 /* HOME SUMMER-TITLE STYLE */
 
-.page .lists .summer-block .summer-title {
+.home .summer-title {
   background-color: rgb(5, 133, 5);
 }
 
 /* HOME AUTUMN-TITLE STYLE */
 
-.page .lists .autumn-block .autumn-title {
+.home .autumn-title {
   background-color: #744950;
 }
 
 /* HOME WINTER-TITLE STYLE */
 
-.page .lists .winter-block .winter-title {
+.home .winter-title {
   background-color: #666374;
 }
 
 /* HOME LISTS */
 
-.page .lists {
+.home .lists {
   display: flex;
   justify-content: space-between;
 }
 
-.page .lists .list {
+.home .lists .list {
   padding: 0;
   list-style-type: none;
 }
 
-.page .lists .list li {
+.home .lists .list li {
   margin-top: 10px;
 }
 
 /* HOME SPRING-LIST STYLE */
 
-.page .lists .spring-block .spring-list li.checked {
+.home .spring-list li.checked {
   color: #fff;
   background-color: #fdc2c2;
   border-color: #9d7995;
@@ -199,7 +199,7 @@
   text-decoration: line-through 1px black;
 }
 
-.page .lists .spring-block .spring-list li:hover {
+.home .spring-list.hover li:hover {
   color: #fff;
   background-color: #ffb6b9;
   border-color: #9d7995;
@@ -208,7 +208,7 @@
 
 /* HOME SUMMER-LIST STYLE */
 
-.page .lists .summer-block .summer-list li.checked {
+.home .summer-list li.checked {
   color: #fff;
   background-color: rgb(28, 165, 28);
   border-color: black;
@@ -216,7 +216,7 @@
   text-decoration: line-through 1px black;
 }
 
-.page .lists .summer-block .summer-list li:hover {
+.home .summer-list.hover li:hover {
   color: #fff;
   background-color: rgb(5, 133, 5);
   border-color: black;
@@ -225,7 +225,7 @@
 
 /* HOME AUTUMN-LIST STYLE */
 
-.page .lists .autumn-block .autumn-list li.checked {
+.home .autumn-list li.checked {
   color: #fff;
   background-color: #8d5a62;
   border-color: black;
@@ -233,7 +233,7 @@
   text-decoration: line-through 1px black;
 }
 
-.page .lists .autumn-block .autumn-list li:hover {
+.home .autumn-list.hover li:hover {
   color: #fff;
   background-color: #744950;
   border-color: black;
@@ -242,7 +242,7 @@
 
 /* HOME WINTER-LIST STYLE */
 
-.page .lists .winter-block .winter-list li.checked {
+.home .winter-list li.checked {
   color: #fff;
   background-color: #918e9e;
   border-color: black;
@@ -250,7 +250,7 @@
   text-decoration: line-through 1px black;
 }
 
-.page .lists .winter-block .winter-list li:hover {
+.home .winter-list.hover li:hover {
   color: #fff;
   background-color: #666374;
   border-color: black;
@@ -261,19 +261,19 @@
 
 /* SPRING NAVIGATION STYLES */
 
-.navigation .season-list.spring .season .season-link {
+.navigation .season-list.spring .season-link {
   border: 2px solid #9d7995;
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-.navigation .season-list.spring .season .spring {
+.navigation .season-list.spring .spring {
   background-color: #fdc2c2;
   color: white;
   text-shadow: 1px 1px 3px black, -1px -1px 3px black;
   font-size: 22px;
 }
 
-.navigation .season-list.spring .season .season-link:hover {
+.navigation .season-list.spring .season-link:hover {
   background-color: #fdc2c2;
   color: white;
   text-shadow: 1px 1px 3px black, -1px -1px 3px black;
@@ -283,12 +283,12 @@
 
 /* SUMMER NAVIGATION STYLES */
 
-.navigation .season-list.summer .season .season-link {
+.navigation .season-list.summer .season-link {
   border: 2px solid #185717;
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-.navigation .season-list.summer .season .summer {
+.navigation .season-list.summer .summer {
   background-color: rgb(5, 133, 5);
   color: white;
   text-shadow: 1px 1px 3px black, -1px -1px 3px black;
@@ -296,7 +296,7 @@
   border-color: black;
 }
 
-.navigation .season-list.summer .season .season-link:hover {
+.navigation .season-list.summer .season-link:hover {
   background-color: rgb(5, 133, 5);
   color: white;
   text-shadow: 1px 1px 3px black, -1px -1px 3px black;
@@ -307,19 +307,19 @@
 
 /* AUTUMN NAVIGATION STYLES */
 
-.navigation .season-list.autumn .season .season-link {
+.navigation .season-list.autumn .season-link {
   border: 2px solid black;
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-.navigation .season-list.autumn .season .autumn {
+.navigation .season-list.autumn .autumn {
   font-size: 22px;
   background-color: #744950;
   color: white;
   text-shadow: 1px 1px 3px black, -1px -1px 3px black;
 }
 
-.navigation .season-list.autumn .season .season-link:hover {
+.navigation .season-list.autumn .season-link:hover {
   font-size: 22px;
   background-color: #744950;
   color: white;
@@ -329,19 +329,19 @@
 
 /* WINTER NAVIGATION STYLES */
 
-.navigation .season-list.winter .season .season-link {
+.navigation .season-list.winter .season-link {
   background-color: rgba(255, 255, 255, 0.8);
   border: 2px solid black;
 }
 
-.navigation .season-list.winter .season .winter {
+.navigation .season-list.winter .winter {
   font-size: 22px;
   background-color: #666374;
   color: white;
   text-shadow: 1px 1px 3px black, -1px -1px 3px black;
 }
 
-.navigation .season-list.winter .season .season-link:hover {
+.navigation .season-list.winter .season-link:hover {
   font-size: 22px;
   background-color: #666374;
   color: white;
@@ -351,7 +351,7 @@
 
 /* ADD BUTTON */
 
-main .add-block .add {
+main .add-button {
   font-size: 20px;
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 20px;
@@ -360,17 +360,17 @@ main .add-block .add {
   transition: all 0.2s, transform 0.01s;
 }
 
-main .add-block .add:active {
+main .add-button:active {
   transform: scale(0.95);
 }
 
 /* ADD BUTTON SPRING */
 
-main .add-block .add.spring {
+main .add-button.spring {
   border: 2px solid #9d7995;
 }
 
-main .add-block .add.spring:hover {
+main .add-button.spring:hover {
   background-color: #fdc2c2;
   color: white;
   text-shadow: 1px 1px 3px black, -1px -1px 3px black;
@@ -379,11 +379,11 @@ main .add-block .add.spring:hover {
 
 /* ADD BUTTON SUMMER */
 
-main .add-block .add.summer {
+main .add-button.summer {
   border: 2px solid #185717;
 }
 
-main .add-block .add.summer:hover {
+main .add-button.summer:hover {
   background-color: rgba(5, 133, 5, 1);
   color: white;
   text-shadow: 1px 1px 3px black, -1px -1px 3px black;
@@ -393,11 +393,11 @@ main .add-block .add.summer:hover {
 
 /* ADD BUTTON AUTUMN */
 
-main .add-block .add.autumn {
+main .add-button {
   border: 2px solid black;
 }
 
-main .add-block .add.autumn:hover {
+main .add-button.autumn:hover {
   background-color: #744950;
   color: white;
   text-shadow: 1px 1px 3px black, -1px -1px 3px black;
@@ -406,11 +406,11 @@ main .add-block .add.autumn:hover {
 
 /* ADD BUTTON WINTER */
 
-main .add-block .add.winter {
+main .add-button {
   border: 2px solid black;
 }
 
-main .add-block .add.winter:hover {
+main .add-button.winter:hover {
   background-color: #666374;
   color: white;
   text-shadow: 1px 1px 3px black, -1px -1px 3px black;
@@ -436,7 +436,7 @@ main .add-block .input {
 
 /* MISTAKE ALERT*/
 
-main .add-block .mistake {
+main .mistake {
   display: none;
   align-items: center;
   justify-content: space-around;
@@ -448,7 +448,7 @@ main .add-block .mistake {
   border-radius: 10px;
 }
 
-main .add-block .mistake .wrong {
+main .mistake .wrong {
   border: 1px solid white;
   border-radius: 50%;
   font-size: 14px;
@@ -497,7 +497,7 @@ main .list li.checked {
   text-decoration: line-through black 2px;
 }
 
-main .list li .close {
+main .list li .delete-button {
   position: absolute;
   font-size: 14px;
   right: 5px;
@@ -510,7 +510,7 @@ main .list li .close {
   cursor: pointer;
 }
 
-main .list li .close:hover {
+main .list li .delete-button:hover {
   color: rgb(255, 255, 255);
   background-color: red;
 }

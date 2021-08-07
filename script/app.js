@@ -1,7 +1,7 @@
 let season = document.querySelector(".data-php").getAttribute("data-attr");
 let list = document.querySelector(".list");
 
-let button = document.querySelector(".add");
+let button = document.querySelector(".add-button");
 let input = document.querySelector(".input");
 
 let itemValue;
@@ -46,7 +46,7 @@ button.onclick = function () {
     list.appendChild(li);
     let deleteButton = document.createElement("button");
     deleteButton.textContent = "X";
-    deleteButton.className = "close";
+    deleteButton.className = "delete-button";
     li.appendChild(deleteButton);
   }
 
