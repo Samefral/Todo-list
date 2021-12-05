@@ -7,7 +7,10 @@ require('header.php');
 
         <input type="text" name="textvalue" class="input" placeholder="Введите значение">
         <button class="add-button <?= $season ?>" type="button">Добавить</button>
-
+        <div class="hint <?= $season ?>">
+            <span class="hint-view">?</span> 
+            <div class="hint-content">Копирование названия задачи на колесико мыши</div>
+        </div>
         <div class="mistake hidden">
             <span class="wrong">X</span>
             <span class="wrong-text">Введите новое значение</span>

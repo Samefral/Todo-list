@@ -425,6 +425,7 @@ main {
 
 main .add-block {
   display: inline-block;
+  position: relative;
   vertical-align: top;
   margin-top: 20px;
 }
@@ -453,6 +454,97 @@ main .mistake .wrong {
   border-radius: 50%;
   font-size: 14px;
   padding: 3px 6px;
+}
+
+/* HINT */
+
+.hint {
+  position: absolute;
+  right: 150px;
+  top: 17px;
+}
+
+.hint-view {
+  padding: 3px 8px;
+  border-radius: 50%;
+  cursor: help;
+  transition: opacity 0.2s;
+}
+
+.hint-view:hover {
+  opacity: 0.7;
+}
+
+.hint-content {
+  display: none;
+  position: absolute;
+  top: -65px;
+  left: -70px;
+  font-size: 14px;
+  padding: 5px 8px;
+  width: 160px;
+  height: 35px;
+
+}
+
+.hint:hover .hint-content {
+  display: inline-block;
+}
+
+/* HINT SPRING */
+
+.hint.spring .hint-view {
+  background-color: #ffb6b9;
+  color: black;
+  text-shadow: 0px 0px 4px black;
+}
+
+.hint.spring .hint-content {
+  border: 1px solid black;
+  background-color: #ffb6b9;
+  color: black;
+  text-shadow: 0px 0px 2px white;
+}
+
+/* HINT SUMMER */
+
+.hint.summer .hint-view {
+  background-color: #13a30b;
+  color: white;
+}
+
+.hint.summer .hint-content {
+  border: 1px solid black;
+  background-color: green;
+  color: white;
+  text-shadow: 0px 0px 3px black;
+}
+
+/* HINT AUTUMN */
+
+.hint.autumn .hint-view {
+  background-color: #311e4b;
+  color: white;
+}
+
+.hint.autumn .hint-content {
+  border: 1px solid black;
+  background-color: #003543;
+  color: white;
+}
+
+/* HINT WINTER */
+
+.hint.winter .hint-view {
+  background-color: #666374;
+  color: white;
+}
+
+.hint.winter .hint-content {
+  border: 1px solid black;
+  background-color: #918e9e;
+  color: white;
+  text-shadow: 0px 0px 3px black;
 }
 
 /* TODO LIST*/
@@ -593,8 +685,15 @@ main .list li.copied::before {
   .input {
     width: 200px;
   }
+  main .add-block .add-button {
+    margin-top: 5px;
+  }
   main .add-block .mistake {
     width: 190px;
+    margin-top: 5px;
+  }
+  .hint {
+    display: none;
   }
   .list {
     padding: 0;
